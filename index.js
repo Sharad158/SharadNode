@@ -133,7 +133,6 @@ const http = require("http");
 // let waitingdata = new Promise((resolve, reject) => {
 //   setTimeout(() => {
 //     resolve(30);
-//     reject(10);
 //   }, 2000);
 // });
 
