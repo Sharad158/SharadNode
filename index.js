@@ -13,6 +13,7 @@
 
 //============================================================
 
+const { Console } = require("console");
 const http = require("http");
 
 //  function datacontrol(req,resp){
@@ -104,3 +105,38 @@ const http = require("http");
 // });
 
 // fs.unlinkSync(`${dirPath}/fruit.txt`);
+// ========================================== 15V. Asyncronous Lamguage =========================
+// console.log("start run");
+
+// setTimeout(() => {
+//   console.log("logic");
+// }, 2000);
+
+// console.log("end");
+
+// DrawBack
+
+// let a = 10;
+// let b = 20;
+
+// setTimeout(() => {
+//   b = 30;
+// }, 2000);
+
+// console.log(a + b);
+
+// Handle DrawBack
+
+// let a = 10;
+// let b = 20;
+
+// let waitingdata = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve(30);
+//     reject(10);
+//   }, 2000);
+// });
+
+// waitingdata.then((data) => {
+//   console.log(a + data);
+// });
