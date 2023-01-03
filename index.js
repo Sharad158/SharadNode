@@ -143,12 +143,37 @@ const http = require("http");
 
 // ========================================= 18V Express JS ====================================================================
 
-const express = require('express');
+// const express = require('express');
 
-const app = express();
+// const app = express();
 
-app.get('',(req,resp)=>{
-    resp.send("My Name Is " + req.query.name);
-});
+// app.get('',(req,resp)=>{
+//     resp.send("My Name Is " + req.query.name);
+// });
 
-app.listen(5000);
+// app.listen(5000);
+
+//======================================20V. Render Html & Json data =========================
+// const express = require('express');
+
+// const app = express();
+
+// app.get('',(req,resp)=>{
+//     // Html Render
+//     resp.send(`<input type="text" name="first_name" placeholder="Please Enter First Name" value="${req.query.name}">`);  
+
+    //Json 
+    // resp.send([
+    //     {
+    //     "name":"Sharad",
+    //     "mobile":"323435454"
+    //     },
+    //     {
+    //     "name":"Sharad",
+    //     "mobile":"323435454"
+    //     },
+    //     ]
+    // );
+// });
+
+// app.listen(3000);
