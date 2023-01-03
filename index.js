@@ -139,3 +139,16 @@ const http = require("http");
 // waitingdata.then((data) => {
 //   console.log(a + data);
 // });
+
+
+// ========================================= 18V Express JS ====================================================================
+
+const express = require('express');
+
+const app = express();
+
+app.get('',(req,resp)=>{
+    resp.send("My Name Is " + req.query.name);
+});
+
+app.listen(5000);
