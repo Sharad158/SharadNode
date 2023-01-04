@@ -192,3 +192,27 @@ const http = require("http");
 // app.use(express.static(publicPath));
 
 // app.listen(3000);
+
+// ============================================= 22v. Remove Extension & 404 Page ===========================================
+
+// const express = require('express');
+// const path = require('path');
+
+// const app = express();
+
+// const publicPath = path.join(__dirname,'public');
+
+// app.get('/about',(req,resp) => {
+//     resp.sendFile(`${publicPath}/about.html`);
+// });
+
+// app.get('/',(req,resp) => {
+//     resp.sendFile(`${publicPath}/index.html`);
+// });
+
+// // If no route define then use below
+// app.get('*',(req,resp) => {
+//     resp.sendFile(`${publicPath}/404.html`);
+// });
+
+// app.listen(3000);
