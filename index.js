@@ -140,7 +140,6 @@ const http = require("http");
 //   console.log(a + data);
 // });
 
-
 // ========================================= 18V Express JS ====================================================================
 
 // const express = require('express');
@@ -160,20 +159,20 @@ const http = require("http");
 
 // app.get('',(req,resp)=>{
 //     // Html Render
-//     resp.send(`<input type="text" name="first_name" placeholder="Please Enter First Name" value="${req.query.name}">`);  
+//     resp.send(`<input type="text" name="first_name" placeholder="Please Enter First Name" value="${req.query.name}">`);
 
-    //Json 
-    // resp.send([
-    //     {
-    //     "name":"Sharad",
-    //     "mobile":"323435454"
-    //     },
-    //     {
-    //     "name":"Sharad",
-    //     "mobile":"323435454"
-    //     },
-    //     ]
-    // );
+//Json
+// resp.send([
+//     {
+//     "name":"Sharad",
+//     "mobile":"323435454"
+//     },
+//     {
+//     "name":"Sharad",
+//     "mobile":"323435454"
+//     },
+//     ]
+// );
 // });
 
 // app.listen(3000);
@@ -219,18 +218,19 @@ const http = require("http");
 
 // ====================================================== 23V. Synamic Template Engine With ejs =================================
 
-const express =require('express');
+const express = require("express");
 
 const app = express();
 
-app.set('view engine','ejs');
+app.set("view engine", "ejs");
 
-app.get('/',(req,resp) => {
-    const data = {
-        'name' : 'sharad',
-        'email' : 'patel',
-    }
-    resp.render('profile',{data});
+app.get("/", (req, resp) => {
+  const data = {
+    name: "sharad",
+    email: "patel",
+    skills: ["c", "c++", "Java", "php"],
+  };
+  resp.render("profile", { data });
 });
 
 app.listen(3000);
